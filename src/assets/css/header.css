@@ -1,0 +1,170 @@
+.header {
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    /* backdrop-filter: blur(20px); */
+    transition: all 0.3s;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    background: hsla(0, 0%, 100%, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+}
+
+.header:hover {
+    height: 400px;
+    /* height: 100%; */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px);
+}
+
+.header:hover .logo img {
+    /* Change logo image on hover */
+    transition: all 0.3s;
+    content: url("../img/logo.svg");
+}
+
+.header:hover .subBg {
+    transition: all 0.5s;
+    width: 200px;
+}
+
+.header:hover li>a,
+.header:hover span {
+    color: var(--Text-Text_default2);
+}
+
+.inner {
+    width: 1440px;
+    line-height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo>a {
+    display: block;
+}
+
+.logo>a>img {
+    vertical-align: middle;
+}
+
+.depth1 {
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.depth1>li>a {
+    font-family: pretendard;
+    font-weight: 400;
+    display: block;
+    width: 200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: -0.025em;
+}
+
+.depth1>li>ul {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.depth1>li>ul>li>a {
+    /* position: relative; */
+    /* display: inline-flex; */
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0em;
+    justify-content: center;
+}
+
+.depth1>li>ul>li>a>span {
+    position: relative;
+    display: inline;
+
+}
+
+/* 서브메뉴 호버효과 */
+.depth1>li>ul>li>a>span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transform: translateY(100%);
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+/* .depth1>li>ul>li>a:hover>span::before {
+      width: 100%;
+    } */
+.depth1>li>ul>li>a:hover>span::before {
+    width: 100%;
+}
+
+.header:hover .depth1>li>ul {
+    opacity: 1;
+    max-height: 500px;
+    transition: opacity 1s, max-height 1s;
+}
+
+/* 문의하기 */
+.contact>a {
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-align: center;
+    color: var(--Text-Text_sub);
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+}
+
+.contact>a:hover {
+    transition: all 0.5s;
+    background: var(--primary001);
+    color: var(--Text-Text_default);
+}
+
+/* test */
+.subBg {
+    position: relative;
+    transition: all 0.5s;
+    width: 120px;
+}
+
+.subBg::before {
+    z-index: -100;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 0);
+    width: 200px;
+    height: 0px;
+    opacity: 1;
+    color: #fff;
+    background: #1e1e1e;
+}
+
+.subBg:hover::before {
+    transition: all 0.5s;
+    height: 400px;
+}
+
+.Textwhite {
+    color: var(--Text-Text_default2);
+}

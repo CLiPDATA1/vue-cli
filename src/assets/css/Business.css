@@ -1,0 +1,125 @@
+.section01-inner {
+    width: 1200px;
+    /* height: 800px; */
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    text-align: left;
+}
+
+.about-si p:nth-child(3) {
+    margin-top: 60px;
+}
+
+.about-si-img {
+    width: 500px;
+}
+
+.section02 {
+    width: 100%;
+    height: 600px;
+    background: #fafafa;
+}
+
+.section02-inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.flow-wrap {
+    margin-top: 80px;
+    display: flex;
+    gap: 22px;
+}
+
+.flow-box {
+    position: relative;
+    width: 270px;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 12px 16px;
+}
+
+.flow-box ul {
+    padding: 20px 16px;
+}
+
+.flow-box ul li {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+    color: var(--Text-Text_sub);
+}
+
+.flow-box ul li::before {
+    display: inline-block;
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--Text-Text_info);
+    line-height: 1.5rem;
+    vertical-align: middle;
+    content: "";
+}
+
+.flow-box-tit img {
+    /* background: url(img/workflow.svg)no-repeat 50% 100%; */
+    position: absolute;
+    left: 0;
+}
+
+.flow-box-tit h5 {
+    /* padding-left: 16px; */
+    padding-bottom: 20px;
+}
+
+
+.section03-inner {
+    width: 1440px;
+    /* height: 1080px; */
+    margin: 150px auto 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Exp-wrap {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Exp-box {
+    /* width: calc(100%/2); */
+    width: 500px;
+    height: 150px;
+    border-bottom: 1px solid var(--Border-Border_default);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Exp-box h6 {
+    margin-bottom: 10px;
+    color: var(--Text-Text_default);
+
+}
+
+.Exp-box p {
+    color: var(--Text-Text_info);
+}
